@@ -1,0 +1,1 @@
+# vanilliajs-chromium-manifestv3-extension-template
