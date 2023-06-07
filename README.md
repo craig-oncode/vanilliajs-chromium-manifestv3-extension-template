@@ -1,1 +1,1 @@
-# vanilliajs-chromium-manifestv3-extension-template
+# VanilliaJS Chromium manifestV3 Extension Template

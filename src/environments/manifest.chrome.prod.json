@@ -1,0 +1,20 @@
+{
+    "name": "App Browser Extension",
+    "description": "Your description here.",
+    "version": "0.1.0.0",
+    "manifest_version": 3,
+    "permissions": ["storage", "tabs", "scripting", "identity"],
+    "web_accessible_resources": [
+        {
+          "resources": [ 
+            "images/logo.png"
+            ],
+          "matches": [ "<all_urls>" ]
+        }],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+        "service_worker": "./app.backend.js"
+    },
+    "action": {},
+    "options_page": "options.html"
+}

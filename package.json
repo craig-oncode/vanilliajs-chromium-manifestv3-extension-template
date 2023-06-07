@@ -1,0 +1,25 @@
+{
+  "name": "app.chromium.extension",
+  "version": "1.0.0",
+  "description": "TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project.",
+  "scripts": {
+    "clean": "del /S dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production --config webpack.local.js",
+    "build:prod": "npm run build:prod:chrome",
+    "build:prod:chrome": "webpack --mode=production --config webpack.chrome.prod.js & jar -cfM dist/app.chrome.prod.zip -C dist package"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Craig.OnCode",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "html-webpack-plugin": "^5.5.1",
+    "webpack": "^5.85.1",
+    "webpack-cli": "^5.1.3"
+  }
+}
